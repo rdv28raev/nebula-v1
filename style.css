@@ -1,0 +1,20 @@
+/* Hide authentication buttons by default to prevent flickering */
+#loginbutton,
+#signupbutton {
+  display: none;
+}
+
+/* Use visibility instead of display for topMenu to prevent layout reflow */
+#topMenu {
+  visibility: hidden;
+  /* Space is reserved, but element is invisible - prevents flickering */
+}
+
+/* Button styling */
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
