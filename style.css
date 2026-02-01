@@ -1,3 +1,10 @@
+/* Body styling */
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
 /* Hide authentication buttons by default to prevent flickering */
 #loginbutton,
 #signupbutton {
@@ -17,4 +24,44 @@ button {
   border: none;
   cursor: pointer;
   padding: 5px 10px;
+}
+
+/* Header logo positioning */
+.header-logos {
+  position: relative;
+  height: 200px;
+}
+
+.logo-left {
+  position: absolute;
+  left: 0;
+}
+
+.logo-right {
+  position: absolute;
+  right: 0;
+}
+
+/* Header text styling */
+.header-text {
+  color: white;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+}
+
+.header-text h1,
+.header-text h3 {
+  margin: 10px 0;
+}
+
+/* Products table styling */
+.products-table {
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.product-info {
+  font-family: Verdana, sans-serif;
+  color: white;
+  text-align: center;
 }
