@@ -4,18 +4,20 @@ document.addEventListener("DOMContentLoaded", () => {
   form?.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const email = document.getElementById("loginEmail").value.trim();
+    //Get data from page
+    const emailOrUsername = document.getElementById("login-email-or-username").value.trim();
     const password = document.getElementById("loginPassword").value;
 
+    // Search for existed user
     const users = JSON.parse(localStorage.getItem("users") || "[]");
-    const found = users.find(u => u.email === email && u.password === password);
+    const found = users.find(elem => ( elem.email === emailOrUsername || elem.username === emailOrUsername )  && elem.password === password);
 
     if (found) {
-      localStorage.setItem("loggedInUser", email);
-      alert("Connexion réussie !");
+      // Login user.
+      localStorage.setItem("loggedInUser", emailOrUsername);
       window.location.href = "index.html";
     } else {
-      alert("Email ou mot de passe incorrect !");
+      alert("L'un des informations ne sont pas corrects");
     }
   });
 });

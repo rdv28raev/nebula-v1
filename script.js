@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateMenu() {
     const user = localStorage.getItem("loggedInUser");
     if (user) {
-      // Use visibility instead of display to prevent layout reflow
+      // Use visibility instead of display none
       topMenu.style.visibility = "visible";
       loginBtn.style.display = "none";
       signupBtn.style.display = "none";

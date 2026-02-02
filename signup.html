@@ -14,12 +14,11 @@
 
   <h2>Inscription</h2>
   <form id="signupForm">
-    <input type="text" id="username" placeholder="Nom d'utilisateur" required><br>
+    <input type="text" id="username" placeholder="Nom d'utilisateur" required min="3" max="50"><br>
     <input type="email" id="email" placeholder="Email" required><br>
-    <input type="password" id="password" placeholder="Mot de passe" required><br>
-    <input type="password" id="confirmpassword" placeholder="Confirmer mot de passe" required><br>
+    <input type="password" id="password" placeholder="Mot de passe" required min="7" max="30"><br>
+    <input type="password" id="confirmpassword" placeholder="Confirmer mot de passe" required min="7" max="30"><br>
     <button type="submit">S'inscrire</button>
   </form>
-
 </body>
 </html>
