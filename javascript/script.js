@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Determine the correct path based on current location
   const isInSubfolder = window.location.pathname.includes('/html/');
-  const loginPath = isInSubfolder ? '../login.html' : 'login.html';
-  const signupPath = isInSubfolder ? '../signup.html' : 'signup.html';
+  const loginPath = isInSubfolder ? 'login.html' : 'html/login.html';
+  const signupPath = isInSubfolder ? 'signup.html' : 'html/signup.html';
 
   loginBtn.addEventListener("click", () => window.location.href = loginPath);
   signupBtn.addEventListener("click", () => window.location.href = signupPath);
