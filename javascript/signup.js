@@ -40,6 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("loggedInUser", email);
 
     alert("Inscription réussie !");
-    window.location.href = "index.html";
+    window.location.href = "/index.html";
   });
 });
