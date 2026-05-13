@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (found) {
       // Login user.
       localStorage.setItem("loggedInUser", emailOrUsername);
-      window.location.href = "/index.html";
+      window.location.href = "../index.html";
     } else {
       alert("L'un des informations ne sont pas corrects");
     }
